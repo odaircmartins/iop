@@ -1,0 +1,85 @@
+.grade-credenciais{
+    margin: 0 auto;
+    width: 90%;
+    height: 90vh;
+    background-color: rgb(135,206,235, .2);
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.item-container{    
+    margin-bottom: 10px;
+    width: 80%;
+    overflow: hidden;
+}
+
+.item-container p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:  white;
+    text-align: center;    
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    letter-spacing: 1px;
+    text-shadow: 0 0 0.3em black, 0 0 0.3em black, 0 0 0.3em black;
+}
+
+#mensagem{
+    width: 100%;
+    height: 10px;
+    font-size: 0.9em;
+    color: 	#DEB887;
+    padding: 10px 0px 10px 0px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.item-container input{
+    align-items: center;
+    justify-content: center;
+    color:   black;
+    padding: 10px;
+    width: 100%;
+    letter-spacing: 1.5px;
+    background-color: -internal-light-dark-color(rgb(255, 255, 255),#FFD700);
+}
+
+.item-container input:hover{
+    border: 2px solid #FFD700;
+}
+
+.item-container input:focus{
+    border-color: #FFD700;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px #FFD700;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px#FFD700;
+}
+
+.button{
+    width: 80%;
+    padding: 8px 0px 8px 0px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: rgb(252,226,75);
+    background: linear-gradient(180deg, rgba(252,226,75,1) 0%, rgba(247,159,44,0.6759746134782038) 100%);
+    color: 	white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+    line-height: 1.1;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    transition: 220ms all ease-in-out;
+    font-size: 1.15rem;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}

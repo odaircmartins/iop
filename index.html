@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <base href="/iop/"> -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="black">
+
+    <title>IOP</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Weather PWA">
+    <link rel="apple-touch-icon" href="/img/icons/icon-152x152.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/boas-vindas.css">
+    <link rel="stylesheet" href="css/credenciais.css">
+    <link rel="stylesheet" href="css/comprar.css">
+
+    <link rel="manifest" href="/manifest.json" />
+</head>
+<!-- https://br.freepik.com/fotos-vetores-gratis/template-apps -->
+<!-- https://www.youtube.com/watch?v=fKdsaWrrjNM -->
+<!-- Fill cup with water - Css Loading Page Animation - Pure Css Animation Effects - Tutorial -->
+<!-- https://br.freepik.com/vetores-gratis/telas-da-interface-do-aplicativo-bancario_9153722.htm -->
+<body>
+    <div id="boas-vindas" class="page active">
+        <section class="grade-boas-vindas">
+            <div class="principal-boas-vindas">
+                <div class="logo">
+                    <div class="copo"></div>
+                </div>
+                <div class="nome-do-app">
+                    iop
+                </div>
+                <div class="slogan">
+                    sua bebida sem filas
+                </div>
+                <a class="button is-warging" id="add-buttom" style="display:none;">Instalar</a>
+            </div>
+            <div class="rodape-boas-vindas">
+                <a href="#comprar" id="entrar">Beber</a>
+            </div>
+        </section>
+    </div>
+
+    <div id="credenciais" class="page">
+        <section class="grade-credenciais">
+            <div class="dados">
+                <div class="container">
+                    <div class="item-container">
+                        <p>
+                            ...  uns segundos para fazer o seu cadastro  ...
+                        </p>
+                    </div>
+                    <div class="item-container">
+                        <input id="nome" type="text" placeholder="Nome">
+                    </div>
+                    <div class="item-container">
+                        <input id="email" type="text" placeholder="E-mail">
+                    </div>
+                    <div class="item-container">
+                        <input id="cpf" type="text" placeholder="CPF" onKeyPress="mascaraCPF(cpf);" maxlength="14">
+                    </div>
+                    <div class="item-container button" id="salvar">
+                        Salvar
+                    </div>
+                    <div class="item-container">
+                        <span id="mensagem"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="comprar" class="page">
+        <section class="grade-comprar">
+            <div class="resumo-comprar">
+                <div class="titulo-comprar">Total em aberto</div>
+                <div class="consumo-valor-comprar">R$ 0,00</div>
+                <div class="consumo-litros-comprar">
+                    <span class="consumo-litros-comprar-span">0.0 litros</span>
+                </div>
+            </div>
+            <div class="leitor-comprar">
+                <div class="ultima-compra">
+                </div>
+                <canvas id="canvas" class="camera active"></canvas>
+            </div>
+            <div class="acoes-comprar">
+                <a id="comandar-chopeira">Cancelar</a>
+            </div>
+        </section>
+    </div>
+
+    <div id="pagina404" class="page">
+        <h1>404</h1>
+        <h2 id="pagina404-erro"></h2>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-database.js"></script>
+    <script src="/pwa.js"></script>
+    <script src="/js/install.js"></script>
+    <script src="/js/bancoDeDados.js"></script>
+    <script src="/js/credenciais.js"></script>
+    <script src="/js/jsQR.js"></script>
+    <script src="/js/comprar.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
