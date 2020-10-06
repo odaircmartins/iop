@@ -22,23 +22,23 @@ const CACHE_NAME = 'iop-v0';
 
 // CODELAB: Add list of files to cache here.
 const FILES_TO_CACHE = [
-    '/index.html',
-    '/favicon.ico',
-    'css/boas-vindas.css',
-    'css/comprar.css',
-    'css/credenciais.css',
-    'css/geral.css',
-    'img/cancelado.png',
-    'img/comprando.png',
-    'img/fundo.jpg',
-    'img/liquido.jpg',
-    'img/ocupado.png',
-    'img/ultima-compra.png',
-    'js/app.js',
-    'js/bancoDeDados.js',
-    'js/comprar.js',
-    'js/credenciais.js',
-    'js/jsQR.js'
+    'iop/index.html',
+    'iop/favicon.ico',
+    'iop/css/boas-vindas.css',
+    'iop/css/comprar.css',
+    'iop/css/credenciais.css',
+    'iop/css/geral.css',
+    'iop/img/cancelado.png',
+    'iop/img/comprando.png',
+    'iop/img/fundo.jpg',
+    'iop/img/liquido.jpg',
+    'iop/img/ocupado.png',
+    'iop/img/ultima-compra.png',
+    'iop/js/app.js',
+    'iop/js/bancoDeDados.js',
+    'iop/s/comprar.js',
+    'iop/js/credenciais.js',
+    'iop/js/jsQR.js'
 ];
 
 self.addEventListener('install', (evt) => {
